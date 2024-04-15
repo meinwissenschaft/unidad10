@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Unidad 10</title>
+        <!-- CSS Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        
+        <!-- CSS propio -->
+        <link rel="stylesheet" href="estilodecajas.css">
+        
+        <!-- CSS de Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Iceberg&display=swap" rel="stylesheet">
+        <!-- JS Unidad 7-->
+        <script src="unidad7.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <div id="titulo">
+                <h1>Introducción a la Filosofía Moderna</h1>
+            </div>
+            <nav id="btn_principal">
+                <ul class="botonera">
+                    <li><a href="#sect1">Inicio de modernidad</a></li>
+                    <li><a href="#sect2">Exponentes Modernos</a></li>
+                    <li><a href="#sect3">Posturas Filosofica</a></li>
+                    <li><a href="#sect4">Modernidad vs Clasicismo</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="sect1">
+            <div id="SecCont1">
+                <p class="txt_img1">El Pensador</p>
+                <p class="txt_img2 iceberg-regular">Una persona pensadora no dejará de conocer los males que nos amenazan.</p>
+            </div>
+            <div id="SecCont2">
+                <h2>¿Cuándo inicia la filosofía moderna?</h3>
+                <p>La Filosofía Moderna inicio en el siglo XV, durante el periodo de la modernidad, 
+                el cual es el tercer periodo histórico en el que se divide convenmcionalmente la historia
+                universal.</p>
+            </div>
+            <div id="SecCont3">
+                <h2>¿Cuál era su centralidad y a quién se contraponia?</h3>
+                <p>Esta corriente surgio dándole lugar central a el humanismo,  un movimiento que enfatizó 
+                    el valor y la importancia de los seres humanos en el universo, en contraste con la filosofía 
+                    medieval, que siempre puso a Dios y al cristianismo en el centro.</p>
+            </div>
+            <div id="SecCont4">
+                <h2>¿Cuál fue el punto de ruptura con la filosofía medieval?</h3>
+                <p class="txt_destacado">Cuando apareció la “filosofía de la naturaleza” del Renacimiento, quebró con la 
+                concepción medieval de la naturaleza en términos de fines y ordenamiento divino, y 
+                comenzó a pensar en términos de fuerzas, causas físicas y mecanismos.</p>
+            </div>
+        </section>
+
+        <section id="sect2">
+            <div class="container-fluid" id="Sec2Cont1">
+                <h2>Exponentes de la Modernidad</h2>
+            </div>
+
+            <div class="container-fluid" id="Sec2Cont2">
+                <div class="row" id="CRene">
+                    <div class="col-xl col-md" id="CajaRene">
+                        <h2>Rene Descartes</h2>
+                        <p id="Rdesc">Fue un filósofo, matemático y físico francés considerado el padre de la filosofía moderna, así como uno protagonista de la revolución científica.</p>
+                        <button id="saber" onclick="saberMas()">Más sobre Descartes</button>
+                        <p id="ReneD" style="display: none;">Su mayor obra fue "El discurso del Metodo"</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid"  id="Sec2Cont3">
+                <div class="row" id="CajaRespuestas">
+                    <div class="col-xl col-md" id="CajaResp" >
+                        <h2>Respuestas a nuestro cuestionario</h2>
+                        <script>
+                            document.write('<p class="destacado_rojo">1ra respuesta: '+preg1+'</p>')
+                            document.write('<p class="destacado_rojo">2da respuesta: '+preg2+'</p>')
+                            document.write('<p class="destacado_rojo">3ra respuesta: '+preg3+'</p>')
+                            document.write('<p class="destacado_rojo">4ta respuesta: '+preg4+'</p>')
+                            document.write('<p class="destacado_rojo">5ta respuesta: '+preg5+'</p>')
+                            document.write('<p class="destacado_rojo">Un curso introductorio a la Filosofía dura 90hs (curso de 12 semanas). La cantidad de horas a dedicar sería:  '+resultado+'h/dia.</p>')
+                        </script>
+                    </div>
+                    <div class="col-xl col-md" id="botonResp">
+                        <button id="masAyuda" onclick="plusAyuda()">Extra!</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid" id="Sec2Cont4">
+                <div class="row" id="filaSec2">
+                    <div class="col-xl col-md" id="tituloNietz">
+                        <h2>Friedrich Nietzsche</h2>
+                    </div>
+                    <div class="col-xl col-md" id="cajaNietz">
+                        <p id="nietz"> Fue un filósofo alemán, cuya obra ha ejercido una influencia en el pensamiento contemporáneo, principal exponente del Existencialismo.</p>
+                    </div>
+                    <button id="conocerNietz" onclick="dataNietzche()">Más sobre Nietzsche</button>
+                    <p id="FNietz" style="display: none;">Su mayor obra fue "Asi habla Zaratustra".</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="sect3">
+            <div id="Sec3Cont1"></div>
+            <div id="Sec3Cont2"></div>
+            <div id="Sec3Cont3"></div>
+            <div id="Sec3Cont4"></div>
+        </section>
+
+        <section id="sect4">
+            <div class="container-fluid">
+                <div class="row" id="mod1">
+                    <div class="col-xl-4 col-md-6" id="mod1Caja1"></div>
+                    <div class="col-xl-8 col-md-6" id="mod1Caja2"></div>
+                </div>
+                <div class="row" id="mod2">
+                    <div class="col-xl-9 col-md-5" id="mod2Caja1"></div>
+                    <div class="col-xl-3 col-md-7" id="mod2Caja2"></div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="Pie">
+            <div class="container-fluid">
+                <div class="row" id="data">
+                    <div class="col-xl-6 col-md-6" id="cajaFooter1">
+                        <p>2024 - Federico Damian Brem</p>
+                        <p>Todos los derechos reservados</p>
+                    </div>
+                    <div class="col-xl col-md" id="cajaFooter2">
+                        <p>Redes Sociales:</p>
+                        <p><a href="https://www.instagram.com/fdbrem/?utm_source=qr&igsh=ZmdlZmh3d3dkY3R0" target="_blank">FDBREM</a></p>
+                        <p><a href="https://www.facebook.com/share/bPnoVzXUCnS1NUKo/?mibextid=qi2Omg" target="_blank">Fede Brem</a></p>
+                    </div>
+                </div>  
+            </div>
+        </footer>
+        
+        <!-- JS Unidad 8-->
+        <script type="text/javascript" src="unidad8.js"></script>
+
+        <!-- JS Bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html> 
